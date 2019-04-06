@@ -304,14 +304,15 @@ main(int argc, char *argv[])
                 type = "Unknown";
                 break;
             }
-            SDL_Log("       type: %s\n", type);
-            SDL_Log("       axes: %d\n", SDL_JoystickNumAxes(joystick));
-            SDL_Log("      balls: %d\n", SDL_JoystickNumBalls(joystick));
-            SDL_Log("       hats: %d\n", SDL_JoystickNumHats(joystick));
-            SDL_Log("    buttons: %d\n", SDL_JoystickNumButtons(joystick));
-            SDL_Log("instance id: %d\n", SDL_JoystickInstanceID(joystick));
-            SDL_Log("       guid: %s\n", guid);
-            SDL_Log("    VID/PID: 0x%.4x/0x%.4x\n", SDL_JoystickGetVendor(joystick), SDL_JoystickGetProduct(joystick));
+            SDL_Log("        type: %s\n", type);
+            SDL_Log("        axes: %d\n", SDL_JoystickNumAxes(joystick));
+            SDL_Log("       balls: %d\n", SDL_JoystickNumBalls(joystick));
+            SDL_Log("        hats: %d\n", SDL_JoystickNumHats(joystick));
+            SDL_Log("     buttons: %d\n", SDL_JoystickNumButtons(joystick));
+            SDL_Log(" instance id: %d\n", SDL_JoystickInstanceID(joystick));
+            SDL_Log("player index: %d\n", SDL_JoystickGetPlayerIndex(joystick));
+            SDL_Log("        guid: %s\n", guid);
+            SDL_Log("     VID/PID: 0x%.4x/0x%.4x\n", SDL_JoystickGetVendor(joystick), SDL_JoystickGetProduct(joystick));
             SDL_JoystickClose(joystick);
         }
     }
